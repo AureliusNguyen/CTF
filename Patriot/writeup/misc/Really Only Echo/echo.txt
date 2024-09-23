@@ -1,0 +1,3 @@
+echo | cat"" flag.txt
+echo hi && \c\a\t flag.txt
+echo $($(echo c)$(echo a)$(echo t)$(echo " ") flag.txt)

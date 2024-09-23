@@ -1,0 +1,32 @@
+# One Line Solve for "RTL Warm Up" Challenge, PatriotCTF 2024
+# gad / unhackers 2024 / unhacker@gmail.com
+
+# The .vcd file is log data from a hardware simulation run,
+# Read up on the .vcd file and what it's used for.
+
+# Most of the file, we don't need, though its interesting.
+# But the lines of binary are clearly data entered and processed.
+# The binary entries with a trailing " character are apparently
+# output ('dout', in the file), so let's look at those. Toss everything else.
+
+# Excerpt:
+#   b01010000
+#   b01000011
+#   b01010100
+#   b01000110
+#   b01111011
+#   b01010010
+#   b01010100
+#   b01001100
+#   b01011111
+#   (...)
+
+# From here it's pretty obvious to interpret it as ASCII, which
+# Perl can do super quickly, if unfashionably. Make it so!
+
+# Extract only binary outputs, toss junk, pass to Perl convert/print one-liner
+
+cat flag.vcd | egrep "^b.*\"" | sed 's/ "//g' | perl -ne 'print chr(oct($_))'
+
+# And, voila.
+PCTF{RTL_ (...redacted...)
