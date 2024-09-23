@@ -5,7 +5,7 @@ def gauss(batch_size):
     half_b = b // 2
     m = [[0] * (b + 1) for _ in range(b + 10)] 
 
-    with open("output.txt", "r") as f:
+    with open("outshort.txt", "r") as f:
         for _ in range(batch_size):
             next(f)
         for i, line in enumerate(f):
