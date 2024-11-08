@@ -1,0 +1,3 @@
+flag[Callaghan Construction Corp (C)]
+
+strings spear | grep -i "flag"

@@ -1,0 +1,2 @@
+flag[David Lynch voice:]
+strace ./waterpipe

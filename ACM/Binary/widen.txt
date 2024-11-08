@@ -1,0 +1,4 @@
+flag[I have a peculiarity located at the IP address who's value is 128.101.131.207]
+
+create a file called flag[David Lynch voice:] with touch "flag[David Lynch voice:]"
+gdb waterpipe then x/s $rsi

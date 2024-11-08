@@ -1,0 +1,4 @@
+ssh using password from https.text which is isthis4ever?
+cd ..
+cat some_super_secret_file
+flag[gotta get my shit together now]

@@ -1,0 +1,2 @@
+cat .bash_history
+flag[security via obscurity]

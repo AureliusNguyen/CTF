@@ -1,0 +1,2 @@
+flag[The Shard (9)]
+strings eoka
